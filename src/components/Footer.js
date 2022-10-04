@@ -1,8 +1,8 @@
 import React from "react";
 
-function Footer() {
+function Footer({ footer }) {
   return (
-    <p className="notes-footer">&copy;created by Hifki Yuda Pratama, 2022.</p>
+    <p className="notes-footer">{footer}</p>
   );
 }
 

@@ -120,7 +120,7 @@ class MyNotesApp extends React.Component {
 
     return (
       <>
-        <Header />
+        <Header header={'My Notes'} />
         <p className="notes-page-title">Create Note</p>
         <CreateNote createNote={this.onCreateNotesHandler} />
 
@@ -132,7 +132,7 @@ class MyNotesApp extends React.Component {
         <NoteList notes={noteIsNotArchived} onDelete={this.onDeleteEventHandler} onArchived={this.onArchivedEventHandler} />
         <h2 className="notes-title">Archived Notes</h2>
         <ArchivedNote notes={noteIsArchived} onDelete={this.onDeleteEventHandler} onMove={this.onMoveEventHandler} />
-        <Footer />
+        <Footer footer={'©created by Hifki Yuda Pratama, 2022.'} />
       </>
     );
   }

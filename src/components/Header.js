@@ -1,8 +1,8 @@
 import React from "react";
 
-function Header() {
+function Header({ header }) {
   return (
-    <h1 className="notes-header">My Notes</h1>
+    <h1 className="notes-header">{header}</h1>
   );
 }
 
