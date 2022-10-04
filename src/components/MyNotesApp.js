@@ -2,6 +2,8 @@ import React from "react";
 import { getInitialData, showFormattedDate } from "../utils/notes";
 import ArchivedNote from "./ArchivedNote";
 import CreateNote from "./CreateNote";
+import Footer from "./Footer";
+import Header from "./Header";
 import NoteList from "./NoteList";
 import SearchNote from "./SearchNote";
 
@@ -118,7 +120,7 @@ class MyNotesApp extends React.Component {
 
     return (
       <>
-        <h1 className="notes-header">My Notes</h1>
+        <Header />
         <p className="notes-page-title">Create Note</p>
         <CreateNote createNote={this.onCreateNotesHandler} />
 
@@ -130,6 +132,7 @@ class MyNotesApp extends React.Component {
         <NoteList notes={noteIsNotArchived} onDelete={this.onDeleteEventHandler} onArchived={this.onArchivedEventHandler} />
         <h2 className="notes-title">Archived Notes</h2>
         <ArchivedNote notes={noteIsArchived} onDelete={this.onDeleteEventHandler} onMove={this.onMoveEventHandler} />
+        <Footer />
       </>
     );
   }

@@ -215,6 +215,10 @@ textarea:focus {
   color: rgba(255, 255, 255, .6);
 }
 
+.notes-footer {
+  margin: 40px 0;
+}
+
 @media (max-width: 1200px) {
   .create-note,
   .search-note {
